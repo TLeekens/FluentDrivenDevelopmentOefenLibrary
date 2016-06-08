@@ -8,13 +8,23 @@ namespace FluentDrivenDevelopmentOefenLibrary
 {
     public class Woord
     {
+        private string woord;
         public Woord(string woord)
         {
-            throw new NotImplementedException();
+            if (woord.Equals(string.Empty))
+            {
+                throw new ArgumentException();
+            }
+            this.woord = woord;
         }
         public bool IsPalindroom()
         {
-            throw new NotImplementedException();
+            for (int x = 0, y = woord.Length - 1; x <= y; ++x, --y)
+            {
+                if (woord[x] != woord[y])
+                    return false;
+            }
+            return true;
         }
     }
 }

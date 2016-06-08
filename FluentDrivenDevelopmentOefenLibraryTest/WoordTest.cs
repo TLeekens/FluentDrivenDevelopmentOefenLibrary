@@ -10,7 +10,7 @@ namespace FluentDrivenDevelopmentOefenLibraryTest
     {
         private Woord woord;
 
-        [TestMethod, ExpectedException(typeof(ArgumentException))]
+        [TestMethod]
         public void ConstructorAansprekenMetLegeStringWerptArgumentException()
         {
             Action act = () => new Woord(string.Empty);
