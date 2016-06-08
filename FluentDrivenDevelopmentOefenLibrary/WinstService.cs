@@ -21,7 +21,7 @@ namespace FluentDrivenDevelopmentOefenLibrary
         {
             get
             {
-                throw new NotImplementedException();
+                return iOpbrengstDAO.TotaleOpbrengst() - iKostDAO.TotaleKost();
             }
         }
 
