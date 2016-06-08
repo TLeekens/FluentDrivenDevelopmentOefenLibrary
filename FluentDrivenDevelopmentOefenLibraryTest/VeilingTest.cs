@@ -17,6 +17,13 @@ namespace FluentDrivenDevelopmentOefenLibraryTest
         }
 
         [TestMethod]
+        public void EenBodDoenMetEenNegatiefBedragWerptArgumentException()
+        {
+            Action a = () => veiling.DoeBod(decimal.Negate(1000.0m));
+            a.ShouldThrow<ArgumentException>("negative buying is selling");
+        }
+
+        [TestMethod]
         public void AlsGeenEnkelBodIngevoerdIsIsHetHoogsteBodGelijkAanNul()
         {
             veiling.HoogsteBod.ShouldBeEquivalentTo(decimal.Zero, "none is none");

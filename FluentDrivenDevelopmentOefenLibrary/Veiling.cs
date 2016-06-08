@@ -8,17 +8,21 @@ namespace FluentDrivenDevelopmentOefenLibrary
 {
     public class Veiling
     {
+        private decimal hoogsteBod;
         public decimal HoogsteBod
         {
             get
             {
-                throw new NotImplementedException();
+                return hoogsteBod;
             }
         }
 
         public void DoeBod(decimal bedrag)
         {
-            throw new NotImplementedException();
+            if (bedrag < 0)
+            throw new ArgumentException();
+            if (bedrag > hoogsteBod)
+                hoogsteBod = bedrag;
         }
     }
 }
