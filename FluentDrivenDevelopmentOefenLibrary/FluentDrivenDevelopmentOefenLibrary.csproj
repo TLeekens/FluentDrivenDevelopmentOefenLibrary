@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ISBN.cs" />
     <Compile Include="Veiling.cs" />
     <Compile Include="Woord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
