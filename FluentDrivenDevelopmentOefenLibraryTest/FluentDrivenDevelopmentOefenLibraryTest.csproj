@@ -59,6 +59,9 @@
   </Choose>
   <ItemGroup>
     <Compile Include="ISBNTest.cs" />
+    <Compile Include="KostDAOStub.cs" />
+    <Compile Include="OpbrengstDAOStub.cs" />
+    <Compile Include="WinstServiceTest.cs" />
     <Compile Include="VeilingTest.cs" />
     <Compile Include="WoordTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
